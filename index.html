@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Roblox Logs Dashboard</title>
-<link rel="stylesheet" href="style.css">
+
+<title>Roblox Logs</title>
+
+<style>
+
+body{
+background:#0f172a;
+color:white;
+font-family:sans-serif;
+text-align:center;
+}
+
+table{
+margin:auto;
+border-collapse:collapse;
+width:80%;
+}
+
+th,td{
+border:1px solid #333;
+padding:10px;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <h1>Roblox Logs Dashboard</h1>
 
-<table id="logTable">
+<input id="search" placeholder="Search player">
+
+<table>
+
 <thead>
 <tr>
 <th>Player</th>
@@ -20,7 +45,8 @@
 </tr>
 </thead>
 
-<tbody></tbody>
+<tbody id="logs"></tbody>
+
 </table>
 
 <script src="script.js"></script>
